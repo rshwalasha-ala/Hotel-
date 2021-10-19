@@ -1,0 +1,428 @@
+                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+                 :root {
+                    --transition: all 0.7s ease;
+                    --yellow: #f9d342;
+                    --dark: #292826;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Playfair Display', serif;
+                }
+                
+                html {
+                    scroll-behavior: smooth;
+                }
+                
+                body {
+                    line-height: 1.6;
+                }
+                
+                .btn:hover {
+                    opacity: 0.85;
+                }
+                
+                .flex {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                h1,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    padding: 8px 0;
+                }
+                
+                h3,
+                h1 {
+                    padding: 34px 27px;
+                    font-family: Georgia;
+                }
+                
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                
+                @media(max-width: 500px) {
+                    body {
+                        font-size: 14px;
+                    }
+                }
+                /* header */
+                
+                .header {
+                    background: url("images/hotel.jpg") center/cover no-repeat;
+                    min-height: 100vh;
+                    color: black;
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: stretch;
+                }
+                
+                .head-top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .head-top span {
+                    cursor: pointer;
+                    letter-spacing: 2px;
+                    transition: var(--transition);
+                }
+                
+                .head-top span:hover {
+                    color: var(--yellow);
+                }
+                
+                .head-bottom {
+                    flex: 1;
+                    text-align: center;
+                    width: 80vw;
+                    margin: 0 auto;
+                }
+                
+                .head-bottom h2 {
+                    padding: 22px 0;
+                    font-size: 45px;
+                    border-bottom: 1px solid #fff;
+                }
+                
+                .head-bottom p {
+                    opacity: 0.7;
+                    font-size: 20px;
+                    margin: 45px auto;
+                    width: 60vw;
+                }
+                
+                .head-btn {
+                    margin: 20px 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border: 3px solid #fff;
+                    background: transparent;
+                    padding: 13px 20px;
+                    background: rgba(0, 0, 0, 0.3);
+                    color: #fff;
+                    cursor: pointer;
+                    transition: var(--transition);
+                }
+                
+                .head-btn:hover {
+                    background: transparent;
+                }
+                
+                @media(max-width: 500px) {
+                    .head-btn {
+                        font-size: 17px;
+                    }
+                    .head-bottom h2 {
+                        font-size: 28px;
+                    }
+                    .head-bottom p {
+                        font-size: 17px;
+                        margin: 20px auto;
+                    }
+                }
+                
+                .head-btn {
+                    color: #edd594;
+                    font-family: Georgia;
+                }
+                
+                .head-btn a:hover {
+                    text-decoration: none;
+                    color: #edd594;
+                }
+                /* side nav */
+                
+                .sidenav {
+                    background: var(--dark);
+                    color: #fff;
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    right: -100%;
+                    width: 300px;
+                    padding: 20px;
+                    transition: var(--transition);
+                    z-index: 10;
+                }
+                /********/
+                /* Navigation */
+                
+                nav {
+                    margin: 0px;
+                    padding: 0;
+                    width: 100%;
+                }
+                
+                nav ul {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    background: #060606;
+                    /* font-weight: 700; text-transform: uppercase; letter-spacing: 2px; */
+                }
+                
+                nav li {
+                    min-width: 100px;
+                    text-align: left;
+                }
+                
+                nav li a {
+                    color: #edd594 !important;
+                    font-size: 1em;
+                    text-decoration: none;
+                    padding: 17px 35px;
+                    display: block;
+                    transition: background-color 0.2s ease;
+                    border-radius: 39px;
+                }
+                
+                nav li a.subnav:after {
+                    content: "\0025BE";
+                    padding-left: 5px;
+                }
+                
+                nav li a:hover {
+                    background: #444;
+                }
+                
+                nav li.active {
+                    background: #444;
+                }
+                /* Subnavi verstecken */
+                
+                nav li ul {
+                    position: absolute;
+                    left: -9999em;
+                    flex-direction: column;
+                }
+                
+                a.ende {
+                    background: #936969;
+                    border-radius: 50px;
+                    text-align: center;
+                }
+                /* Subnavi einblenden */
+                
+                nav li:hover>ul,
+                nav li:focus-within>ul {
+                    left: auto;
+                }
+                
+                #btn-open img,
+                #btn-close img {
+                    max-width: 50px;
+                }
+                
+                .open,
+                .close {
+                    display: none;
+                    margin-left: auto;
+                    color: black;
+                }
+                
+                @media screen and (max-width:1070px) {
+                    #header {
+                        background-size: cover;
+                    }
+                    .headline {
+                        font-size: 2.5em;
+                        padding: 100px 0 0;
+                    }
+                }
+                
+                @media screen and (max-width:780px) {
+                    #header {
+                        min-height: auto;
+                        padding: 40px;
+                    }
+                    #logo {
+                        text-indent: 0;
+                        text-align: center;
+                    }
+                    .headline {
+                        padding: 40px 0 0;
+                        color: var(--main-color);
+                        text-shadow: none;
+                    }
+                    .wrapper {
+                        margin: 0 auto;
+                    }
+                    /* reguläre Navi in Mobilansicht erstmal ausblenden; (nur direktes Kind ausblenden und nicht allgemein alle ul) */
+                    nav>ul {
+                        display: none;
+                    }
+                    .open {
+                        display: table;
+                        width: 3em;
+                        height: 1.5em;
+                    }
+                    .open:before {
+                        content: "";
+                        border-top: 5px solid;
+                        border-bottom: double 16px;
+                        display: inline-block;
+                        width: 80%;
+                        padding: 6px 0 0;
+                        color: var(--main-color-dark);
+                    }
+                    .close:before {
+                        content: "\002A2F";
+                        display: inline-block;
+                        width: 40%;
+                        font-size: 70px;
+                        color: var(--main-color-dark);
+                        color: black;
+                    }
+                    /*  Navi an fester Position fixieren; wenn left:0 hinzugefügt wird, geht die Navi über die komplette Breite */
+                    nav {
+                        right: 20px;
+                        top: 40px;
+                        width: auto;
+                    }
+                    /* wenn der Menü-Button geklickt wird, wird die Main-Nav (die ul) wieder eingeblendet  */
+                    .open:target~ul {
+                        display: block;
+                    }
+                    /* open-Button wird ausgeblendet nach Klick und der close-Button eingeblendet  */
+                    .open:target {
+                        display: none;
+                    }
+                    .open:target~.close {
+                        display: table;
+                    }
+                    /* Subnavi wieder anzeigen */
+                    nav li li a {
+                        padding-left: 25px;
+                    }
+                    nav li a {
+                        padding: 20px 40px;
+                    }
+                    nav li {
+                        border-top: 1px solid #666;
+                    }
+                    nav>ul>li:first-child {
+                        border: none;
+                    }
+                }
+                
+                @media screen and (max-width:200px) {
+                    .open,
+                    .close {
+                        color: black;
+                        display: none;
+                        margin-left: auto;
+                        margin-top: -24px;
+                    }
+                    .close {
+                        color: black;
+                        position: relative;
+                        top: -97px;
+                    }
+                    nav ul {
+                        margin-top: 40px;
+                        background-color: #f9d342;
+                        position: relative;
+                        top: -108px;
+                    }
+                }
+                /* footer */
+                
+                .footer {
+                    background: var(--dark);
+                    color: #edd594;
+                    text-align: center;
+                }
+                
+                .footer-container {
+                    width: 85vw;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                }
+                
+                .footer-container p,
+                .footer-container a,
+                .footer-container span {
+                    opacity: 0.8;
+                }
+                
+                .footer a {
+                    display: block;
+                    color: #edd594;
+                    text-decoration: none;
+                }
+                
+                .social-icons {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px 0;
+                }
+                
+                .social-icons li {
+                    margin: 0 10px;
+                    width: 50px;
+                    height: 50px;
+                    background: #2e2e2e;
+                    border-radius: 50%;
+                    transition: var(--transition);
+                    cursor: pointer;
+                }
+                
+                .social-icons li:hover {
+                    background: #fff;
+                    color: #2e2e2e;
+                }
+                
+                .contact-item span {
+                    display: block;
+                }
+                
+                @media(min-width: 900px) {
+                    .footer-container {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 20px;
+                    }
+                }
+                
+                @media(min-width: 1170px) {
+                    .footer {
+                        text-align: left;
+                    }
+                    .footer-container {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                    .footer-container div:nth-child(1) p {
+                        padding-right: 20px;
+                    }
+                    .contact-item {
+                        display: grid;
+                        grid-template-columns: 10% 90%;
+                        margin-bottom: 15px;
+                        align-items: center;
+                    }
+                }
+                
+                .showModal {
+                    position: fixed;
+                    background: transparent;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 5;
+                }

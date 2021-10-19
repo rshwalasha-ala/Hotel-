@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <link rel="stylesheet" href="startseitehotel.css">
+    <link rel="stylesheet" href="./css/deinst.css">
+    <title>Document</title>
+</head>
+<section id="hero">
+    <nav id="hauptnavi">
+        <a href="#blubb" class="open" id="blubb">MENÜ</a>
+        <a href="#" class="close">zuklappen</a>
+        <ul>
+            <li><a href="index.php" title="hotel">HOTEL</a></li>
+
+
+            <li><a href="bilderrufe.html" title="unser zimmer">UNSER ZIMMER</a>
+                <ul class="hauptsub">
+                    <li><a href="bilderrufe.html" title="bildr">SUITEN</a></li>
+                    <li><a href="bilderrufe.html" title="SUITEN">DOPPELT</a></li>
+                    <li><a href="bilderrufe.html" title="EINZEL">EINZEL</a></li>
+
+                </ul>
+            </li>
+            <li><a href="dienestrufe.php" title="VERFÜGBARE">VERFÜGBARE DIENSTE</a>
+                <ul class="hauptsub">
+                    <li><a href="dienestrufe.php" title="Funktionen der Navigation auf einer Webseite">Frühstück </a>
+                    </li>
+                    <li><a href="dienestrufe.php" title="portiie">Portier</a></li>
+                    <li><a href="dienestrufe.php" title="Touren">Touren</a></li>
+                    <li><a href="dienestrufe.php" title="Andere">Andere Dienste</a></li>
+                </ul>
+            </li>
+            <li><a href="bilderrufe.html" title="bildr">BILDER</a>
+                <ul class="hauptsub">
+                    <li><a href="bilderrufe.html" title="HOTEL">HOTEL</a></li>
+                    <li><a href="bilderrufe.html" title="zimmer">ZIMMER</a></li>
+                    <li><a href="bilderrufe.html" title="KONFERENZRAUM">KONFERENZRAUM</a></li>
+                    <li><a href="bilderrufe.html" title="RESTAURANT">RESTAURANT</a></li>
+                </ul>
+            </li>
+            <li><a href="buchen_formular.php" title="BUCHEN">BUCHEN SIE JETZT</a>
+
+            </li>
+        </ul>
+    </nav>
+
+
+
+    </header>
+
+    <div class="container p-3">
+        <h1> BILDER </h1>
+        <div class="fg-gallery">
+            <img src="images/slid14.jpg" alt="">
+            <img src="images/slid7.jpg" alt="">
+            <img src="images/slid8.jpg" alt="">
+            <img src="images/slid6.jpg" alt="">
+            <img src="images/slid10.jpg" alt="">
+            <img src="images/slid4.jpg" alt="">
+            <img src="images/slid6.jpg" alt="">
+            <img src="images/slid3.jpg" alt="">
+        </div>
+
+        <div class="fg-gallery ns">
+            <img src="images/slid13.jpg" alt="">
+            <img src="images/slid11.jpg" alt="">
+            <img src="images/slid12.jpg" alt="">
+            <img src="images/slid3.jpg" alt="">
+            <img src="images/slid1.jpg" alt="">
+            <img src="images/hotel.jpg" alt="">
+        </div>
+
+    </div>
+
+    <body>
+
+        <script>
+            var a = new FgGallery('.fg-gallery', {
+                cols: 4,
+                style: {
+                    border: '10px solid #fff',
+                    height: '180px',
+                    borderRadius: '5px',
+                    boxShadow: '0 2px 10px -5px #858585',
+                }
+            })
+
+            var a = new FgGallery('.ns', {
+                cols: 3,
+                style: {
+                    border: '0 solid #fff',
+                    height: '240px',
+                    borderRadius: '5px',
+                }
+            })
+        </script>
+        <footer class="footer">
+            <div class="footer-container">
+                <div>
+                    <h2>About Hotel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                        provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                    <ul class="social-icons">
+                        <li class="flex">
+                            <i class=""></i>
+                        </li>
+                        <li class="flex">
+                            <i class=""></i>
+                        </li>
+                        <li class="flex">
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Nützliche Links</h2>
+                    <a href="#">Blog</a>
+                    <a href="#">Zimmer</a>
+                    <a href="#">Abonnement</a>
+                    <a href="#">Geschenkkarte</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href="#">Karriere</a>
+                    <a href="#">Über uns</a>
+                    <a href="#">Kontaktieren Sie uns</a>
+                    <a href="dienestrufe.php">Dienste</a>
+                    <a href="impressum.php" title="Der Link zu unserem Impressum">Impressum</a>
+                </div>
+
+                <div>
+                    <h2>Eine Frage haben</h2>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +67068965607585
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>'
+
+
+    </body>

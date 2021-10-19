@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@700&display=swap');
+
+/*RESET*/
+
+
+/**{margin: 0;padding: 0;}*/
+
+
+/* Farbcodes */
+
+:root {
+    --main-color: #007a82;
+    --main-color-light: #a6e0e3;
+    --main-color-dark: #014f52;
+    --accent-color: #c4491d;
+    --accent-color-light: #fcb095;
+    --accent-color-dark: #741E00;
+    --gray-color: #8e8e8e;
+    --gray-color-light: #dadada;
+    --gray-color-dark: #333;
+}
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #fff;
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* Überschriften */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Titillium Web', Arial, sans-serif;
+    color: #ecc966;
+    font-weight: 700;
+}
+
+.impr {
+    color: #ecc966;
+}
+
+
+/* Allgemeine Formatierungen */
+
+a,
+a:visited {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-color-dark);
+}
+
+ul,
+ol {
+    list-style: square;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}

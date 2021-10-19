@@ -1,0 +1,117 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background: url("../images/see.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (max-width:400px) {
+    body {
+        width: 0 auto;
+        margin: 0 auto;
+        padding: 50px;
+        background: url("../images/see.jpg") center/cover no-repeat;
+        background-size: cover;
+        background-position: left center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+div.elem-group {
+    margin: 20px 0;
+}
+
+div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    margin-top: -27px;
+}
+
+input,
+select,
+textarea,
+p {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+textarea {
+    height: 250px;
+}
+
+hr {
+    border: 1px dotted #ccc;
+}
+
+button {
+    border: 3px solid #edd594;
+    height: 50px;
+    background: #31dbd1;
+    color: rgb(14, 13, 13);
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+.back {
+    border: 3px solid #edd594;
+    height: 50px;
+    background: #31dbd1;
+    ;
+    color: rgb(14, 13, 13);
+    font-size: 26px;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 60px;
+}
+
+a.back {
+    text-decoration: none;
+}
+
+p {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+    margin-top: 28px;
+    background-color: #fff;
+}

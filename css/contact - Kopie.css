@@ -1,0 +1,41 @@
+.form{margin:0 auto;}
+.contact{background: rgba(218, 218, 218, 0.9);}
+.contact h2{border-bottom:1px solid #c4491d;}
+label{display: block;}
+input,textarea{border: 1px solid #dadada;box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);}
+[type=submit],button{border: none;background: none;background: #c4491d;color: white;font-weight: bold;margin: 1em 0;padding: 0.25em 0.5em;}
+.form a span{display:block;text-align: right;}
+
+/* zustände */       
+input:hover,select:hover,textarea:hover{border: 1px solid #c4491d;}
+input:focus,select:focus,textarea:focus{border: 1px solid #c4491d;}
+[type=submit]:hover,button:hover,[type=submit]:focus,button:focus{border:none;box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);background: orangered;}
+
+/* formatierung open close */
+.open2{
+    position: fixed;
+    left: 50px;
+    top:70vh;
+    opacity: 0.7;    
+}
+
+
+/* show hide */
+.contact{position:absolute;left:-9999em;}
+.open2:target ~ .contact{position:sticky;bottom: 0;left: 0;right:0;}
+.open2:target{left:-9999em;}
+
+
+/* responsive */
+@media screen and (max-width: 1400px){
+    .open2{left:0;transition: 0.5s all;}
+}
+@media screen and (max-width:1320px){
+    .open2:hover,.open2:focus{left:0;background: none;transition: 0.5s all;}
+    .open2{
+        left:-55px;
+        background: black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
